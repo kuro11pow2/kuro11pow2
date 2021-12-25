@@ -7,7 +7,7 @@ on:
   schedule:
     - cron: "0 */12 * * *"
 
-# 이 명령을 사용하면 Actions 탭에서 Action을 자동으로 실행할 수 있다.
+# 이 명령을 사용하면 Actions 탭에서 Action을 수동으로 실행할 수 있다.
   workflow_dispatch:
 
 # workflow 동작 순서
