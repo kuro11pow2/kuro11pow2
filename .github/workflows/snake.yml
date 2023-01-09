@@ -25,13 +25,12 @@ jobs:
       - run: echo $GITHUB_WORKSPACE
 
     # 뱀 생성
-      - uses: Platane/snk@master
-        id: snake-gif
+      - uses: Platane/snk@v2
         with:
-          github_user_name: kuro11pow2
+          github_user_name: ${{ github.repository_owner }}
           # "output" 브랜치에 파일을 생성하도록 되어있음.
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-snake-dark.svg?palette=github-dark
 
      # 빌드 상태 출력
       - run: git status
